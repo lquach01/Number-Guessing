@@ -19,6 +19,14 @@ function resetPrevGuesses(){
     document.getElementById("try5").innerHTML = "";
     document.getElementById("try6").innerHTML = "";
     document.getElementById("try7").innerHTML = "";
+    
+    document.getElementById('try1').className = "attempt";
+    document.getElementById("try2").className = "attempt";
+    document.getElementById("try3").className = "attempt";
+    document.getElementById("try4").className = "attempt";
+    document.getElementById("try5").className = "attempt";
+    document.getElementById("try6").className = "attempt";
+    document.getElementById("try7").className = "attempt";
 }
 
 
@@ -59,6 +67,7 @@ function changePrevGuesses(givenNum){
             document.getElementById('try1').className = 'too-high-attempt';
         } else {
             document.getElementById('try1').className = 'win-attempt';
+            alert("winner!!!!!");
         }
 
     } else if (numGuesses == 2) {
@@ -119,13 +128,16 @@ function changePrevGuesses(givenNum){
 
         if (givenNum < randomNumber) {
             document.getElementById('try7').className = 'too-low-attempt';
+            alert('loserrrrr');
         } else if (givenNum > randomNumber) {
             document.getElementById('try7').className = 'too-high-attempt';
+            alert('loserrrrr');
         } else {
             document.getElementById('try7').className = 'win-attempt';
+            
         }
 
-
+    
     }
 }
 
