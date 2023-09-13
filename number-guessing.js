@@ -129,9 +129,12 @@ function changePrevGuesses(givenNum){
         if (givenNum < randomNumber) {
             document.getElementById('try7').className = 'too-low-attempt';
             alert('loserrrrr');
+            document.getElementById("ans").innerHTML = 'Answer: ' + randomNumber;
         } else if (givenNum > randomNumber) {
             document.getElementById('try7').className = 'too-high-attempt';
             alert('loserrrrr');
+            document.getElementById("ans").innerHTML = 'Answer: ' + randomNumber;
+
         } else {
             document.getElementById('try7').className = 'win-attempt';
             
