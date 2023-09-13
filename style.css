@@ -5,3 +5,52 @@
 .text {
     color: #27374D;
 }
+
+.attempt {
+    border-radius: 50;
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+.attempts {
+    display: flex;
+    flex-direction: row;
+}
+
+.too-low-attempt {
+    border-radius: 50;
+    background-color: blue;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+
+}
+
+.too-high-attempt {
+    border-radius: 50;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}
+
+.win-attempt {
+    border-radius: 50;
+    background-color: green;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+}

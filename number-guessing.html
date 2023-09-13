@@ -8,17 +8,30 @@
 
 
     <body>
-        <h1 class="text"> Guess the Number </h1>
-        <h2 class="text" id = "rules"> Guess the number within 5 tries! </h2>
+        <h1 class="text"> GUESS THE NUMBER </h1>
+        <h2 class="text" id = "rules"> Guess the number within 7 tries! </h2>
         <button onclick="newGame()"> New Game </button>
 
         <h3 class="text"> enter a number</h3>
         <input type = "number" id = "input-number" placeholder="Input a number 1-500" >
-        <button onclick="compNums()"> submit! </button>
+        <button onclick="compNums()" id = 'submit-button'> submit! </button>
         <h3 class="text" id = "result"> </h3>
 
+        <h3 class="text" id = "ans"> </h3>
+
         <h3> Previous Guesses:</h3>
-        <h3 id = "previous-guesses"> </h3>
+
+        <div class = "attempts"> 
+            <div class = "attempt" id = "try1"> </div>
+            <div class = "attempt" id = "try2"> </div>
+            <div class = "attempt" id = "try3"> </div>
+            <div class = "attempt" id = "try4"> </div>
+            <div class = "attempt" id = "try5"> </div>
+            <div class = "attempt" id = "try6"> </div>
+            <div class = "attempt" id = "try7"> </div>
+        </div>
+        
+
     </body>
 </html>
 
