@@ -4,7 +4,8 @@ const subButton = document.getElementById('submit-button');
 
 function newGame() {
     randomNumber = Math.floor(Math.random() * (500 - 1)) + 1;
-    document.getElementById("ans").innerHTML = randomNumber;
+   //document.getElementById("ans").innerHTML = randomNumber;
+   document.getElementById("ans").innerHTML = "";
     document.getElementById("result").innerHTML = "";
     numGuesses = 0;
     resetPrevGuesses();
