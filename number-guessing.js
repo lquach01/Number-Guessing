@@ -38,13 +38,13 @@ function compNums() {
 
     if (givenNum < randomNumber) {
         // if too low
-        document.getElementById("result").innerHTML = "needs to be higher";
+        document.getElementById("result").innerHTML = "Needs to be higher";
         
         changePrevGuesses(givenNum);
 
     } else if (givenNum > randomNumber) {
         // if too high
-        document.getElementById("result").innerHTML = "needs to be lower";
+        document.getElementById("result").innerHTML = "Needs to be lower";
 
         changePrevGuesses(givenNum);
         
@@ -52,7 +52,7 @@ function compNums() {
     } else {
         //winner!!
 
-        document.getElementById("result").innerHTML = "slay yay";
+        document.getElementById("result").innerHTML = 'YOU WIN!!!';
         changePrevGuesses(givenNum);
     }
 
@@ -68,7 +68,7 @@ function changePrevGuesses(givenNum){
             document.getElementById('try1').className = 'too-high-attempt';
         } else {
             document.getElementById('try1').className = 'win-attempt';
-            alert("winner!!!!!");
+            alert("Winner!!!!!");
         }
 
     } else if (numGuesses == 2) {
@@ -129,11 +129,11 @@ function changePrevGuesses(givenNum){
 
         if (givenNum < randomNumber) {
             document.getElementById('try7').className = 'too-low-attempt';
-            alert('loserrrrr');
+            alert('You lost :( The number was: ' + randomNumber);
             document.getElementById("ans").innerHTML = 'Answer: ' + randomNumber;
         } else if (givenNum > randomNumber) {
             document.getElementById('try7').className = 'too-high-attempt';
-            alert('loserrrrr');
+            alert('You lost :( The number was: ' + randomNumber);
             document.getElementById("ans").innerHTML = 'Answer: ' + randomNumber;
 
         } else {
